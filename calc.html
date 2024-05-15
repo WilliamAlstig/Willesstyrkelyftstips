@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Styrkelyftstips">
+  <meta name="keywords" content="Knäböj, Marklyft, Bänkpress">
+  <meta name="author" content="William Alstig">
+  <title>Willes Styrkelyftstips</title>
+  <link rel="stylesheet" type="text/css" href="calc.css">
+  <link rel = "icon" href =  "https://iili.io/JvA2DWN.md.png" 
+        type = "image/x-icon"> 
+</head>
+<body> 
+    <div class="Flexcontainer">
+        <div class="dropdown">
+          <a href="#" class="dropbtn">
+            <img id="hamburgare" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="Dropdown">
+          </a>
+          <div class="dropdown-content">
+            <a href="bench.html">Bänkpress</a>
+            <a href="deadlift.html">Marklyft</a>
+            <a href="squat.html">Knäböj</a>
+            <a href="calc.html">Kalkylator</a>
+          </div>
+        </div>
+          <a class="Logonavbarcontainer" href="index.html" >
+            <img class="Logonavbar" src="logo-no-background.png" alt="Logo">
+          </a>
+      </div>
+
+  <main>
+    <h1 class="h1bench">Kalkylator för gym</h1>
+   <p class="inledningbench">Välkommen till min gymkalkylator! Detta praktiska verktyg är designad för att hjälpa styrkelyftare och gymentusiaster att enkelt beräkna den totala vikten på en stång. Ange bara vikten du placerar på ena sidan av stången, och kalkylatorn kommer automatiskt att räkna ut den totala vikten inklusive stångens egen vikt som du anger nedan.</p>
+    
+   <div class="valjabar">
+      <label for="barType" class="bartypeselecttextabove">Välj typ av stång använder du?</label>
+      <select id="barType" class="barTypeSelect">
+        <option value="20" selected>Herrstång (20kg)</option>
+        <option value="15">Damstång (15kg)</option>
+      </select>
+    </div>
+
+   
+
+    <label class="viktinput" for="weightInput">Ange vikt på ena sidan av stången (kg):</label>
+    <input type="number" id="weightInput" min="0" />
+    <button class="knappen" onclick="calculateTotalWeight()">Beräkna total vikt (kg)</button>
+    <div class="textcontainer">
+      <p id="totalvikt">Din totala vikt på din stång är:  <span id="resultText"></span> </p>
+    </div>
+
+
+
+    
+  </main>
+  <footer class="footerfan">
+    <img class="logofooter" src="logo-no-background.png" alt="Hemsidans logga">
+    <div class="alltextifooter">
+      <h3 class="rubrikfooter">Mina kontaktuppgifter</h3>
+      <p class="namn">William Alstig</p>
+      <p class="epostinnanemail">E-post: <a class="email" href="mailto:william.alstig@gmail.com">william.alstig@gmail.com</a></p>
+      <p class="telefonnummer">Telefonnummer: <a href="tel:+46702687795">070 268 77 95</a></p>
+    </div>
+  </footer>
+
+  <script sync src="javascript.js"></script>
+</body>
+</html>
